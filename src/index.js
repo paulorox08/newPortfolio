@@ -1,7 +1,9 @@
 import './background.css';
 import './header.css';
+import './statusBar.css'
 
 import {header} from './header.js';
+import {bar} from './statusBar.js';
 
 function toggle() {
     const body = document.querySelector("body");
@@ -12,7 +14,7 @@ function toggle() {
 
 function lightOrDark() {
     const root = document.documentElement;
-    const newTheme = root.className === 'dark' ? 'light' : 'dark';
+    const newTheme = root.className === 'light' ? 'dark' : 'light';
     root.className = newTheme;
 }
 

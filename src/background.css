@@ -3,7 +3,10 @@
     --bg-btn-img-change: url("./images/mode_night_black_24dp.svg");
     --bg-colour: #212529;
     --text-colour: white;
-    --dots-colour: #DEE2E6;
+    --dots-colour: #6C757D;
+    --bg-toggle-colour: #fca311;
+    --bg-toggle-colour-change: #eb5e28;
+    --accent-colour: #fca311;
 }
 
 :root.light {
@@ -11,7 +14,10 @@
     --bg-btn-img-change: url("./images/lightbulb_white_24dp.svg");
     --bg-colour: #DEE2E6;
     --text-colour: black;
-    --dots-colour: #14213D;
+    --dots-colour: #495057;
+    --bg-toggle-colour: #eb5e28;
+    --bg-toggle-colour-change: #fca311;
+    --accent-colour: #eb5e28;
 }
 
 body {
@@ -26,6 +32,7 @@ body {
 
 .content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -33,18 +40,18 @@ body {
 }
 
 .toggle {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     position: fixed;
     top: 2%;
     right: 2%;
     background: var(--bg-btn-img) no-repeat center;
-    border-color: var(--text-colour);
+    border-color: var(--bg-toggle-colour);
     border-radius: 50%;
 }
 
 .toggle:hover {
     cursor: pointer;
-    background: var(--bg-btn-img-change) no-repeat center;
+    background-color: var(--bg-toggle-colour);
     transition: 0.5s;
 }
